@@ -14,9 +14,9 @@
 
 		merge into Emp.Skill_mapping as tgt
 		using ( select @personid as person_id ,skill_id
-				from Emp.Skill_set 
-				where skill_type in( select value from string_split( @skilltype,','))
-			   ) as src
+			from Emp.Skill_set 
+			where skill_type in( select value from string_split( @skilltype,','))
+			) as src
 			on  tgt.person_id = src.person_id and
 				tgt.skill_id  = src.skill_id
 
