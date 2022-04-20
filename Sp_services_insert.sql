@@ -1,4 +1,4 @@
-	create or alter proc Sp_services_type_insert 
+	create or alter proc Org.Sp_services_type_insert 
 		@servicestype varchar(100)
 	as
 	begin

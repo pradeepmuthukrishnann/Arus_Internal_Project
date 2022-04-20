@@ -1,4 +1,4 @@
-	create or alter proc Sp_clients_type_insert
+	create or alter proc Org.Sp_clients_type_insert
 		@clientstype as varchar(50),
 		@sgst decimal(3,1),
 		@cgst decimal(3,1)
