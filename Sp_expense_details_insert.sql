@@ -60,26 +60,4 @@
 	
 	exec Fin.Sp_expense_details_insert 'T00001','Attipalli','Salary','2022/03/31',20000
 	
-	select * from fin.Expense_details
-	where branch_id is null
-	exec fin.Sp_expense_type_insert 'Salary'
-
-	select * from Org.Branch
-	select * from Geo.Address
-	insert into Geo.Address(line_1,line_2,longitude,lattitude,city_id)
-	values('57 13th Cross', 'Novel office','77.607962','12.951609',47)
-	select * from Geo.City where city = 'koramangala'
-	insert into Org.branch(branch,address_id)
-	values ('Bangalore',2)
-
-	declare @a varchar(250) = 'null'
-
-	if @a is null
-		begin
-			print 'is null'
-		end
-	else if @a is not null
-		begin
-			print 'is not null'
-		end
 	

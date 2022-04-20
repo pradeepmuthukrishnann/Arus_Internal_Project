@@ -66,7 +66,7 @@
 			select ( 'C'+format(@b,'00000')) as rollnumber
 		end
 	else
-		 begin
+		begin
 			print 'Did not have this person type'
 		end
 	end
