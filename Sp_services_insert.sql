@@ -11,7 +11,7 @@
 		update set tgt.services_type = src.services_type
 
 		when not matched then
-		insert (tgt.services_type)
+		insert (services_type)
 		values (src.services_type);
 
 	end
