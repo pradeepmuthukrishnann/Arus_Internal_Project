@@ -16,3 +16,6 @@
 
 	end
 
+	exec Sp_services_type_insert 'Rate/Hour'
+
+	select * from Org.Services
